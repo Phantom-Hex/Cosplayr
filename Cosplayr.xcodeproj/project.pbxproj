@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62E5A35A96F6412EF9034032 /* Pods_Cosplayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94074BD0954C82A7F85D3162 /* Pods_Cosplayr.framework */; };
+		DB1057001F157D190031A5DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1056FF1F157D190031A5DF /* AppDelegate.swift */; };
+		DB1057051F157D190031A5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1057031F157D190031A5DF /* Main.storyboard */; };
+		DB1057071F157D190031A5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1057061F157D190031A5DF /* Assets.xcassets */; };
+		DB10570A1F157D190031A5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1057081F157D190031A5DF /* LaunchScreen.storyboard */; };
+		DB1057151F157DC10031A5DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1057141F157DC10031A5DF /* GoogleService-Info.plist */; };
+		DBBC13851F1679C200BADBD8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC13841F1679C200BADBD8 /* Post.swift */; };
+		DBBC13871F1679F500BADBD8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC13861F1679F500BADBD8 /* User.swift */; };
+		DBBC13891F167A4F00BADBD8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC13881F167A4F00BADBD8 /* Comment.swift */; };
+		DBBC14031F16887A00BADBD8 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14021F16887A00BADBD8 /* UserCollectionViewCell.swift */; };
+		DBBC14051F168FEE00BADBD8 /* PostImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14041F168FEE00BADBD8 /* PostImageViewCell.swift */; };
+		DBBC14071F16901C00BADBD8 /* CommentImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14061F16901C00BADBD8 /* CommentImageViewCell.swift */; };
+		DBBC14091F16906700BADBD8 /* CommentTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14081F16906700BADBD8 /* CommentTextViewCell.swift */; };
+		DBBC140B1F16911200BADBD8 /* PostTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */; };
+		DBBC14111F16991D00BADBD8 /* VoterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */; };
+		DBBC14131F16992A00BADBD8 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14121F16992A00BADBD8 /* Section.swift */; };
+		DBBC14151F16993700BADBD8 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14141F16993700BADBD8 /* ExpandableHeaderView.swift */; };
+		DBC159731F2018D7005901F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159721F2018D7005901F9 /* LoginViewController.swift */; };
+		DBC159751F2018FD005901F9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159741F2018FD005901F9 /* SignUpViewController.swift */; };
+		DBC159771F201938005901F9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159761F201938005901F9 /* FeedViewController.swift */; };
+		DBC159791F2019AB005901F9 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159781F2019AB005901F9 /* UserProfileViewController.swift */; };
+		DBC1597B1F2019E3005901F9 /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1597A1F2019E3005901F9 /* NetService.swift */; };
+		DBC1597D1F201A28005901F9 /* GuestUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1597C1F201A28005901F9 /* GuestUserViewController.swift */; };
+		DBC1597F1F201A5A005901F9 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1597E1F201A5A005901F9 /* CommentsTableViewController.swift */; };
+		DBC159811F201A94005901F9 /* AddCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159801F201A94005901F9 /* AddCommentViewController.swift */; };
+		DBC159831F201BFE005901F9 /* AddpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159821F201BFE005901F9 /* AddpostViewController.swift */; };
+		DBC159851F201C58005901F9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159841F201C58005901F9 /* Extensions.swift */; };
+		DBC159891F20FF02005901F9 /* VotingCosplayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159881F20FF02005901F9 /* VotingCosplayerTableViewController.swift */; };
+		DBC1598B1F211026005901F9 /* SignUpContestantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1598A1F211026005901F9 /* SignUpContestantViewController.swift */; };
+		DBC8E7681F16CB69003CA1B6 /* CustomizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E7671F16CB69003CA1B6 /* CustomizableView.swift */; };
+		DBC8E76A1F16CBA4003CA1B6 /* CustomizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E7691F16CBA4003CA1B6 /* CustomizableImageView.swift */; };
+		DBC8E76C1F16CBCC003CA1B6 /* CustomizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E76B1F16CBCC003CA1B6 /* CustomizableButton.swift */; };
+		DBC8E76E1F16CC08003CA1B6 /* CustomizableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E76D1F16CC08003CA1B6 /* CustomizableTextField.swift */; };
+		DBC8E7701F16E13B003CA1B6 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E76F1F16E13B003CA1B6 /* SCLAlertView.swift */; };
+		DBD9CA7B1F17DEDF00E7CA72 /* Cosplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9CA7A1F17DEDF00E7CA72 /* Cosplayer.swift */; };
+		DBD9CA7D1F17DFDD00E7CA72 /* Convention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9CA7C1F17DFDD00E7CA72 /* Convention.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94074BD0954C82A7F85D3162 /* Pods_Cosplayr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cosplayr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		940AAA65AECC8F8471E5F2D5 /* Pods-Cosplayr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cosplayr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cosplayr/Pods-Cosplayr.debug.xcconfig"; sourceTree = "<group>"; };
+		B78DC76D6A0913E6CEC0C2FC /* Pods-Cosplayr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cosplayr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cosplayr/Pods-Cosplayr.release.xcconfig"; sourceTree = "<group>"; };
+		DB1056FC1F157D190031A5DF /* Cosplayr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosplayr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1056FF1F157D190031A5DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB1057041F157D190031A5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB1057061F157D190031A5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB1057091F157D190031A5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB10570B1F157D190031A5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1057141F157DC10031A5DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBBC13841F1679C200BADBD8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DBBC13861F1679F500BADBD8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DBBC13881F167A4F00BADBD8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		DBBC14021F16887A00BADBD8 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		DBBC14041F168FEE00BADBD8 /* PostImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewCell.swift; sourceTree = "<group>"; };
+		DBBC14061F16901C00BADBD8 /* CommentImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentImageViewCell.swift; sourceTree = "<group>"; };
+		DBBC14081F16906700BADBD8 /* CommentTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTextViewCell.swift; sourceTree = "<group>"; };
+		DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTextViewCell.swift; sourceTree = "<group>"; };
+		DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoterViewController.swift; sourceTree = "<group>"; };
+		DBBC14121F16992A00BADBD8 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		DBBC14141F16993700BADBD8 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		DBBC14181F16C3D800BADBD8 /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Black.ttf"; path = "Fonts/TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		DBBC14191F16C3D800BADBD8 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Bold.ttf"; path = "Fonts/TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		DBBC141A1F16C3D800BADBD8 /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-BoldItalic.ttf"; path = "Fonts/TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DBBC141B1F16C3D800BADBD8 /* TitilliumWeb-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-ExtraLight.ttf"; path = "Fonts/TitilliumWeb-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DBBC141C1F16C3D800BADBD8 /* TitilliumWeb-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-ExtraLightItalic.ttf"; path = "Fonts/TitilliumWeb-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		DBBC141D1F16C3D800BADBD8 /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Italic.ttf"; path = "Fonts/TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
+		DBBC141E1F16C3D800BADBD8 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Light.ttf"; path = "Fonts/TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		DBBC141F1F16C3D800BADBD8 /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-LightItalic.ttf"; path = "Fonts/TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
+		DBBC14201F16C3D800BADBD8 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Regular.ttf"; path = "Fonts/TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		DBBC14211F16C3D800BADBD8 /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-SemiBold.ttf"; path = "Fonts/TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		DBBC14221F16C3D800BADBD8 /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-SemiBoldItalic.ttf"; path = "Fonts/TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		DBC159721F2018D7005901F9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBC159741F2018FD005901F9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DBC159761F201938005901F9 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DBC159781F2019AB005901F9 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		DBC1597A1F2019E3005901F9 /* NetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetService.swift; sourceTree = "<group>"; };
+		DBC1597C1F201A28005901F9 /* GuestUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestUserViewController.swift; sourceTree = "<group>"; };
+		DBC1597E1F201A5A005901F9 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		DBC159801F201A94005901F9 /* AddCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCommentViewController.swift; sourceTree = "<group>"; };
+		DBC159821F201BFE005901F9 /* AddpostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddpostViewController.swift; sourceTree = "<group>"; };
+		DBC159841F201C58005901F9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DBC159881F20FF02005901F9 /* VotingCosplayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotingCosplayerTableViewController.swift; sourceTree = "<group>"; };
+		DBC1598A1F211026005901F9 /* SignUpContestantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContestantViewController.swift; sourceTree = "<group>"; };
+		DBC8E7671F16CB69003CA1B6 /* CustomizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableView.swift; sourceTree = "<group>"; };
+		DBC8E7691F16CBA4003CA1B6 /* CustomizableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableImageView.swift; sourceTree = "<group>"; };
+		DBC8E76B1F16CBCC003CA1B6 /* CustomizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableButton.swift; sourceTree = "<group>"; };
+		DBC8E76D1F16CC08003CA1B6 /* CustomizableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableTextField.swift; sourceTree = "<group>"; };
+		DBC8E76F1F16E13B003CA1B6 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		DBD9CA7A1F17DEDF00E7CA72 /* Cosplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cosplayer.swift; sourceTree = "<group>"; };
+		DBD9CA7C1F17DFDD00E7CA72 /* Convention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convention.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1056F91F157D190031A5DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E5A35A96F6412EF9034032 /* Pods_Cosplayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B62D2EC123025B184409909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94074BD0954C82A7F85D3162 /* Pods_Cosplayr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96F04B310D9A3E5F02B4590 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				940AAA65AECC8F8471E5F2D5 /* Pods-Cosplayr.debug.xcconfig */,
+				B78DC76D6A0913E6CEC0C2FC /* Pods-Cosplayr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB1056F31F157D190031A5DF = {
+			isa = PBXGroup;
+			children = (
+				DB1056FE1F157D190031A5DF /* Cosplayr */,
+				DB1056FD1F157D190031A5DF /* Products */,
+				D96F04B310D9A3E5F02B4590 /* Pods */,
+				1B62D2EC123025B184409909 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB1056FD1F157D190031A5DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB1056FC1F157D190031A5DF /* Cosplayr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB1056FE1F157D190031A5DF /* Cosplayr */ = {
+			isa = PBXGroup;
+			children = (
+				DB1057061F157D190031A5DF /* Assets.xcassets */,
+				DB1057161F157DC50031A5DF /* P-Lists */,
+				DB1057131F157D3C0031A5DF /* Services */,
+				DB1057121F157D340031A5DF /* ViewControllers */,
+				DB1057111F157D2A0031A5DF /* Models */,
+				DB1056FF1F157D190031A5DF /* AppDelegate.swift */,
+				DB1057081F157D190031A5DF /* LaunchScreen.storyboard */,
+				DB1057031F157D190031A5DF /* Main.storyboard */,
+			);
+			path = Cosplayr;
+			sourceTree = "<group>";
+		};
+		DB1057111F157D2A0031A5DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC13841F1679C200BADBD8 /* Post.swift */,
+				DBBC13861F1679F500BADBD8 /* User.swift */,
+				DBBC13881F167A4F00BADBD8 /* Comment.swift */,
+				DBD9CA7A1F17DEDF00E7CA72 /* Cosplayer.swift */,
+				DBD9CA7C1F17DFDD00E7CA72 /* Convention.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DB1057121F157D340031A5DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9CA801F17F31A00E7CA72 /* Conventions */,
+				DBBC140D1F1698EA00BADBD8 /* Voting */,
+				DBBC140C1F1698D100BADBD8 /* Social VC */,
+				DBBC14011F16883B00BADBD8 /* Cells */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB1057131F157D3C0031A5DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBC1597A1F2019E3005901F9 /* NetService.swift */,
+				DBC8E7661F16CB33003CA1B6 /* Customizables */,
+				DBBC13FE1F16806F00BADBD8 /* Fonts */,
+				DBC159841F201C58005901F9 /* Extensions.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		DB1057161F157DC50031A5DF /* P-Lists */ = {
+			isa = PBXGroup;
+			children = (
+				DB1057141F157DC10031A5DF /* GoogleService-Info.plist */,
+				DB10570B1F157D190031A5DF /* Info.plist */,
+			);
+			name = "P-Lists";
+			sourceTree = "<group>";
+		};
+		DBBC13FE1F16806F00BADBD8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC14181F16C3D800BADBD8 /* TitilliumWeb-Black.ttf */,
+				DBBC14191F16C3D800BADBD8 /* TitilliumWeb-Bold.ttf */,
+				DBBC141A1F16C3D800BADBD8 /* TitilliumWeb-BoldItalic.ttf */,
+				DBBC141B1F16C3D800BADBD8 /* TitilliumWeb-ExtraLight.ttf */,
+				DBBC141C1F16C3D800BADBD8 /* TitilliumWeb-ExtraLightItalic.ttf */,
+				DBBC141D1F16C3D800BADBD8 /* TitilliumWeb-Italic.ttf */,
+				DBBC141E1F16C3D800BADBD8 /* TitilliumWeb-Light.ttf */,
+				DBBC141F1F16C3D800BADBD8 /* TitilliumWeb-LightItalic.ttf */,
+				DBBC14201F16C3D800BADBD8 /* TitilliumWeb-Regular.ttf */,
+				DBBC14211F16C3D800BADBD8 /* TitilliumWeb-SemiBold.ttf */,
+				DBBC14221F16C3D800BADBD8 /* TitilliumWeb-SemiBoldItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		DBBC14011F16883B00BADBD8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC14021F16887A00BADBD8 /* UserCollectionViewCell.swift */,
+				DBBC14041F168FEE00BADBD8 /* PostImageViewCell.swift */,
+				DBBC14061F16901C00BADBD8 /* CommentImageViewCell.swift */,
+				DBBC14081F16906700BADBD8 /* CommentTextViewCell.swift */,
+				DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		DBBC140C1F1698D100BADBD8 /* Social VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBC8E76F1F16E13B003CA1B6 /* SCLAlertView.swift */,
+				DBC159781F2019AB005901F9 /* UserProfileViewController.swift */,
+				DBC1597C1F201A28005901F9 /* GuestUserViewController.swift */,
+				DBC159801F201A94005901F9 /* AddCommentViewController.swift */,
+				DBC1597E1F201A5A005901F9 /* CommentsTableViewController.swift */,
+				DBC159821F201BFE005901F9 /* AddpostViewController.swift */,
+				DBC159721F2018D7005901F9 /* LoginViewController.swift */,
+				DBC159741F2018FD005901F9 /* SignUpViewController.swift */,
+				DBC159761F201938005901F9 /* FeedViewController.swift */,
+			);
+			name = "Social VC";
+			sourceTree = "<group>";
+		};
+		DBBC140D1F1698EA00BADBD8 /* Voting */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC14141F16993700BADBD8 /* ExpandableHeaderView.swift */,
+				DBBC14121F16992A00BADBD8 /* Section.swift */,
+				DBC159881F20FF02005901F9 /* VotingCosplayerTableViewController.swift */,
+				DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */,
+				DBC1598A1F211026005901F9 /* SignUpContestantViewController.swift */,
+			);
+			name = Voting;
+			sourceTree = "<group>";
+		};
+		DBC8E7661F16CB33003CA1B6 /* Customizables */ = {
+			isa = PBXGroup;
+			children = (
+				DBC8E7671F16CB69003CA1B6 /* CustomizableView.swift */,
+				DBC8E7691F16CBA4003CA1B6 /* CustomizableImageView.swift */,
+				DBC8E76B1F16CBCC003CA1B6 /* CustomizableButton.swift */,
+				DBC8E76D1F16CC08003CA1B6 /* CustomizableTextField.swift */,
+			);
+			name = Customizables;
+			sourceTree = "<group>";
+		};
+		DBD9CA801F17F31A00E7CA72 /* Conventions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Conventions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB1056FB1F157D190031A5DF /* Cosplayr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB10570E1F157D190031A5DF /* Build configuration list for PBXNativeTarget "Cosplayr" */;
+			buildPhases = (
+				14FCCD873812599CF9FB442B /* [CP] Check Pods Manifest.lock */,
+				DB1056F81F157D190031A5DF /* Sources */,
+				DB1056F91F157D190031A5DF /* Frameworks */,
+				DB1056FA1F157D190031A5DF /* Resources */,
+				0B1905F6D7FF152E307A28BB /* [CP] Embed Pods Frameworks */,
+				BA53985BB519F682310677EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cosplayr;
+			productName = Cosplayr;
+			productReference = DB1056FC1F157D190031A5DF /* Cosplayr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1056F41F157D190031A5DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Phantom Hex";
+				TargetAttributes = {
+					DB1056FB1F157D190031A5DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 95H67958MN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB1056F71F157D190031A5DF /* Build configuration list for PBXProject "Cosplayr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1056F31F157D190031A5DF;
+			productRefGroup = DB1056FD1F157D190031A5DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB1056FB1F157D190031A5DF /* Cosplayr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB1056FA1F157D190031A5DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB10570A1F157D190031A5DF /* LaunchScreen.storyboard in Resources */,
+				DB1057151F157DC10031A5DF /* GoogleService-Info.plist in Resources */,
+				DB1057071F157D190031A5DF /* Assets.xcassets in Resources */,
+				DB1057051F157D190031A5DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1905F6D7FF152E307A28BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cosplayr/Pods-Cosplayr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14FCCD873812599CF9FB442B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA53985BB519F682310677EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cosplayr/Pods-Cosplayr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1056F81F157D190031A5DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC8E76A1F16CBA4003CA1B6 /* CustomizableImageView.swift in Sources */,
+				DBC159791F2019AB005901F9 /* UserProfileViewController.swift in Sources */,
+				DBBC14071F16901C00BADBD8 /* CommentImageViewCell.swift in Sources */,
+				DBC8E7681F16CB69003CA1B6 /* CustomizableView.swift in Sources */,
+				DBBC14111F16991D00BADBD8 /* VoterViewController.swift in Sources */,
+				DBC159811F201A94005901F9 /* AddCommentViewController.swift in Sources */,
+				DBBC140B1F16911200BADBD8 /* PostTextViewCell.swift in Sources */,
+				DBD9CA7B1F17DEDF00E7CA72 /* Cosplayer.swift in Sources */,
+				DBC1597F1F201A5A005901F9 /* CommentsTableViewController.swift in Sources */,
+				DBC159891F20FF02005901F9 /* VotingCosplayerTableViewController.swift in Sources */,
+				DBC159751F2018FD005901F9 /* SignUpViewController.swift in Sources */,
+				DBBC14131F16992A00BADBD8 /* Section.swift in Sources */,
+				DBD9CA7D1F17DFDD00E7CA72 /* Convention.swift in Sources */,
+				DBBC13891F167A4F00BADBD8 /* Comment.swift in Sources */,
+				DBC1597B1F2019E3005901F9 /* NetService.swift in Sources */,
+				DBC8E76C1F16CBCC003CA1B6 /* CustomizableButton.swift in Sources */,
+				DBC159731F2018D7005901F9 /* LoginViewController.swift in Sources */,
+				DBBC14151F16993700BADBD8 /* ExpandableHeaderView.swift in Sources */,
+				DBBC14091F16906700BADBD8 /* CommentTextViewCell.swift in Sources */,
+				DBC159851F201C58005901F9 /* Extensions.swift in Sources */,
+				DBBC14051F168FEE00BADBD8 /* PostImageViewCell.swift in Sources */,
+				DBC8E76E1F16CC08003CA1B6 /* CustomizableTextField.swift in Sources */,
+				DB1057001F157D190031A5DF /* AppDelegate.swift in Sources */,
+				DBC159831F201BFE005901F9 /* AddpostViewController.swift in Sources */,
+				DBC1598B1F211026005901F9 /* SignUpContestantViewController.swift in Sources */,
+				DBBC13871F1679F500BADBD8 /* User.swift in Sources */,
+				DBBC14031F16887A00BADBD8 /* UserCollectionViewCell.swift in Sources */,
+				DBBC13851F1679C200BADBD8 /* Post.swift in Sources */,
+				DBC159771F201938005901F9 /* FeedViewController.swift in Sources */,
+				DBC8E7701F16E13B003CA1B6 /* SCLAlertView.swift in Sources */,
+				DBC1597D1F201A28005901F9 /* GuestUserViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB1057031F157D190031A5DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1057041F157D190031A5DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB1057081F157D190031A5DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1057091F157D190031A5DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB10570C1F157D190031A5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB10570D1F157D190031A5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB10570F1F157D190031A5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940AAA65AECC8F8471E5F2D5 /* Pods-Cosplayr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95H67958MN;
+				INFOPLIST_FILE = Cosplayr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Phantom-Hex.Cosplayr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB1057101F157D190031A5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78DC76D6A0913E6CEC0C2FC /* Pods-Cosplayr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95H67958MN;
+				INFOPLIST_FILE = Cosplayr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Phantom-Hex.Cosplayr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1056F71F157D190031A5DF /* Build configuration list for PBXProject "Cosplayr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB10570C1F157D190031A5DF /* Debug */,
+				DB10570D1F157D190031A5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB10570E1F157D190031A5DF /* Build configuration list for PBXNativeTarget "Cosplayr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB10570F1F157D190031A5DF /* Debug */,
+				DB1057101F157D190031A5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB1056F41F157D190031A5DF /* Project object */;
+}

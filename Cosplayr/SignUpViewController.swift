@@ -26,9 +26,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UINavigationC
     
     var networkingService = NetService()
     
-    @IBOutlet weak var createAccountButton: CustomizableButton!
-    
     @IBOutlet weak var userProfileImageView: CustomizableImageView!
+    @IBAction func createAccountButton(_ sender: Any) {
+        createAccountAction()
+    }
     
     
     var countryArrays: [String] = []
@@ -45,7 +46,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UINavigationC
         setCountryPickerView()
     }
     
-    @IBAction func createAccountAction(_ sender: CustomizableButton) {
+    func createAccountAction() {
         let email = emailTextField.text!.lowercased()
         let finalEmail = email.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let password = passwordTextField.text!
@@ -73,11 +74,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UINavigationC
                 let alert = SCLAlertView()
                 _ = alert.showError("OOPS🙊", subTitle: "Passwords do not match. Please try again.")
             }
-            
         }
-        
         self.view.endEditing(true)
-        
     }
     
 }

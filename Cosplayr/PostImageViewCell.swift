@@ -37,8 +37,6 @@ class PostImageTableViewCell: UITableViewCell {
         super.prepareForReuse()
         self.usernameLabel.text = ""
         self.postTextLabel.text = ""
-        
-        
     }
     
     func configureCell(post: Post){

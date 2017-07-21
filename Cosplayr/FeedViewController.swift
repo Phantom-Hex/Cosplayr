@@ -14,17 +14,20 @@ import Firebase
 
 class FeedViewController: UIViewController {
     
+    //MARK: Outlets
+    
+    
+    
+    
     var databaseRef: DatabaseReference! {
         
         return Database.database().reference()
     }
     
-//    var segmentedControl: HMSegmentedControl!
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!{
         didSet {
-            collectionView.alpha = 0
+            collectionView.alpha = 1
         }
     }
     
@@ -37,7 +40,6 @@ class FeedViewController: UIViewController {
         
         
         fetchAllUsers()
-//        setSegmentedControl()
         fetchAllPosts()
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -73,7 +75,7 @@ class FeedViewController: UIViewController {
     }
     @IBAction func logOutAction(_ sender: UIButton) {
         netService.logOut {
-            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "login") as! LoginViewController
+            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login") as! LoginViewController
             loginVC.modalTransitionStyle = .crossDissolve
             self.present(loginVC, animated: true, completion: nil)
         }
@@ -82,35 +84,6 @@ class FeedViewController: UIViewController {
     }
     
     @IBAction func unwindToHome(storyboardSegue: UIStoryboardSegue){}
-    
-    /* 
-     func setSegmentedControl(){
-        segmentedControl = HMSegmentedControl(frame: CGRect(x: 0, y: 99, width: self.view.frame.size.width, height: 60))
-        segmentedControl.sectionTitles = ["FEEDS","USERS"]
-        segmentedControl.backgroundColor = UIColor(colorWithHexValue: 0x3D5B94)
-        segmentedControl.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 1, green: 1, blue: 1, alpha: 0.5), NSFontAttributeName: UIFont(name:"AppleSDGothicNeo-Medium", size: 18)!]
-        segmentedControl.selectedTitleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        segmentedControl.selectionIndicatorColor = UIColor(red:1, green: 1, blue: 1, alpha: 0.5)
-        segmentedControl.selectionStyle = .fullWidthStripe
-        segmentedControl.selectedSegmentIndex = 0
-        segmentedControl.selectionIndicatorLocation = .up
-        segmentedControl.addTarget(self, action: #selector(FeedViewController.segmentedControlAction), for: UIControlEvents.valueChanged)
-        self.view.addSubview(segmentedControl)
-        
-    }
-    
-    func segmentedControlAction(){
-        if segmentedControl.selectedSegmentIndex == 0 {
-            
-            self.collectionView.alpha = 0
-            self.tableView.alpha = 1.0
-            
-        } else {
-            self.collectionView.alpha = 1.0
-            self.tableView.alpha = 0
-        }
-    }
-    */
 }
 
 

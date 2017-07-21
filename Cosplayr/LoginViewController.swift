@@ -8,34 +8,15 @@
 
 import UIKit
 
-import UIKit
-
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
-    
-    
-    //    @IBOutlet weak var emailTextField: CustomizableTextfield! {
-//        didSet{
-//            emailTextField.delegate = self
-//        }
-//    }
-//    @IBOutlet weak var passwordTextField: CustomizableTextfield!{
-//        didSet{
-//            passwordTextField.delegate = self
-//        }
-//    }
     
     @IBOutlet weak var forgotDetailButton: UIButton!
     @IBAction func signInButton(_ sender: Any) {
         signInAction()
     }
-    
-    
-    
-//    @IBOutlet weak var signInButton: CustomizableButton!
     
     var networkingService = NetService()
     

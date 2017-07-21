@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class UserCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var username: UILabel!

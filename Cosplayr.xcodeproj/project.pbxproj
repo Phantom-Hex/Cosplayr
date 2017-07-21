@@ -19,7 +19,7 @@
 		DBBC14031F16887A00BADBD8 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14021F16887A00BADBD8 /* UserCollectionViewCell.swift */; };
 		DBBC14051F168FEE00BADBD8 /* PostImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14041F168FEE00BADBD8 /* PostImageViewCell.swift */; };
 		DBBC14071F16901C00BADBD8 /* CommentImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14061F16901C00BADBD8 /* CommentImageViewCell.swift */; };
-		DBBC14091F16906700BADBD8 /* CommentTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14081F16906700BADBD8 /* CommentTextViewCell.swift */; };
+		DBBC14091F16906700BADBD8 /* CommentTableTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14081F16906700BADBD8 /* CommentTableTextViewCell.swift */; };
 		DBBC140B1F16911200BADBD8 /* PostTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */; };
 		DBBC14111F16991D00BADBD8 /* VoterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */; };
 		DBBC14131F16992A00BADBD8 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14121F16992A00BADBD8 /* Section.swift */; };
@@ -62,7 +62,7 @@
 		DBBC14021F16887A00BADBD8 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBBC14041F168FEE00BADBD8 /* PostImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewCell.swift; sourceTree = "<group>"; };
 		DBBC14061F16901C00BADBD8 /* CommentImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentImageViewCell.swift; sourceTree = "<group>"; };
-		DBBC14081F16906700BADBD8 /* CommentTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTextViewCell.swift; sourceTree = "<group>"; };
+		DBBC14081F16906700BADBD8 /* CommentTableTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableTextViewCell.swift; sourceTree = "<group>"; };
 		DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTextViewCell.swift; sourceTree = "<group>"; };
 		DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoterViewController.swift; sourceTree = "<group>"; };
 		DBBC14121F16992A00BADBD8 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			children = (
 				DB1057061F157D190031A5DF /* Assets.xcassets */,
 				DB1057161F157DC50031A5DF /* P-Lists */,
-				DB1057131F157D3C0031A5DF /* Services */,
+				DB1057131F157D3C0031A5DF /* Things */,
 				DB1057121F157D340031A5DF /* ViewControllers */,
 				DB1057111F157D2A0031A5DF /* Models */,
 				DB1056FF1F157D190031A5DF /* AppDelegate.swift */,
@@ -184,7 +184,7 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		DB1057131F157D3C0031A5DF /* Services */ = {
+		DB1057131F157D3C0031A5DF /* Things */ = {
 			isa = PBXGroup;
 			children = (
 				DBC1597A1F2019E3005901F9 /* NetService.swift */,
@@ -192,7 +192,7 @@
 				DBBC13FE1F16806F00BADBD8 /* Fonts */,
 				DBC159841F201C58005901F9 /* Extensions.swift */,
 			);
-			name = Services;
+			name = Things;
 			sourceTree = "<group>";
 		};
 		DB1057161F157DC50031A5DF /* P-Lists */ = {
@@ -228,7 +228,7 @@
 				DBBC14021F16887A00BADBD8 /* UserCollectionViewCell.swift */,
 				DBBC14041F168FEE00BADBD8 /* PostImageViewCell.swift */,
 				DBBC14061F16901C00BADBD8 /* CommentImageViewCell.swift */,
-				DBBC14081F16906700BADBD8 /* CommentTextViewCell.swift */,
+				DBBC14081F16906700BADBD8 /* CommentTableTextViewCell.swift */,
 				DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */,
 			);
 			name = Cells;
@@ -423,7 +423,7 @@
 				DBC8E76C1F16CBCC003CA1B6 /* CustomizableButton.swift in Sources */,
 				DBC159731F2018D7005901F9 /* LoginViewController.swift in Sources */,
 				DBBC14151F16993700BADBD8 /* ExpandableHeaderView.swift in Sources */,
-				DBBC14091F16906700BADBD8 /* CommentTextViewCell.swift in Sources */,
+				DBBC14091F16906700BADBD8 /* CommentTableTextViewCell.swift in Sources */,
 				DBC159851F201C58005901F9 /* Extensions.swift in Sources */,
 				DBBC14051F168FEE00BADBD8 /* PostImageViewCell.swift in Sources */,
 				DBC8E76E1F16CC08003CA1B6 /* CustomizableTextField.swift in Sources */,

@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func takeToHome(){
         if Auth.auth().currentUser != nil {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let homeVC = storyboard.instantiateViewController(withIdentifier: "home") as! UITabBarController
+                let homeVC = storyboard.instantiateViewController(withIdentifier: "home") as! FeedViewController
                 self.window?.rootViewController = homeVC
             }
     }

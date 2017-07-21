@@ -12,7 +12,5 @@ target 'Cosplayr' do
     pod 'Firebase/Auth'
     pod 'Firebase/Storage'
     pod 'Firebase/Database'
-    pod 'HMSegmentedControl’
-    pod 'SDWebImage'
 
     end

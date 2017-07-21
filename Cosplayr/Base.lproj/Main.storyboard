@@ -270,7 +270,6 @@
         <!--Voting-->
         <scene sceneID="l7O-iQ-1Jl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HLy-Pd-D9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Voting" id="hSN-9f-mmA" customClass="VoterViewController" customModule="Cosplayr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gPS-TS-1oK"/>
@@ -331,6 +330,7 @@
                         <outlet property="voterTableView" destination="7wp-WU-21T" id="LIj-Lu-gew"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLy-Pd-D9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="706.39999999999998" y="1154.5727136431785"/>
         </scene>
@@ -897,13 +897,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMb-Zt-dg2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phantom Hex Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6N0-fu-XKz">
-                                        <rect key="frame" x="162" y="35" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="c4U-2f-b9a"/>
-                                            <constraint firstAttribute="height" constant="50" id="ijl-xu-lab"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="356-v2-u44">
                                         <rect key="frame" x="16" y="42" width="37" height="37"/>
                                         <constraints>
@@ -939,13 +932,24 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-hR-ghc">
-                                        <rect key="frame" x="66" y="42" width="37" height="37"/>
+                                        <rect key="frame" x="66" y="42" width="113" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Comment Discussion"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Coming Soon!" image="Comment Discussion"/>
                                         <connections>
                                             <segue destination="pkf-DS-O0f" kind="showDetail" id="B9s-Lf-zCt"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phantom Hex Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6N0-fu-XKz">
+                                        <rect key="frame" x="210" y="35" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="c4U-2f-b9a"/>
+                                            <constraint firstAttribute="height" constant="50" id="ijl-xu-lab"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2034211131" green="0.67026827590000004" blue="0.71018863340000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -956,7 +960,7 @@
                                     <constraint firstItem="356-v2-u44" firstAttribute="top" secondItem="pMb-Zt-dg2" secondAttribute="top" constant="42" id="Nkb-WT-6S1"/>
                                     <constraint firstItem="356-v2-u44" firstAttribute="leading" secondItem="pMb-Zt-dg2" secondAttribute="leading" constant="16" id="Tqi-vL-R5F"/>
                                     <constraint firstAttribute="height" constant="99" id="Uev-Mn-vsS"/>
-                                    <constraint firstItem="6N0-fu-XKz" firstAttribute="centerX" secondItem="pMb-Zt-dg2" secondAttribute="centerX" id="j7Y-FX-3Nm"/>
+                                    <constraint firstItem="6N0-fu-XKz" firstAttribute="centerX" secondItem="pMb-Zt-dg2" secondAttribute="centerX" constant="47.5" id="j7Y-FX-3Nm"/>
                                     <constraint firstItem="bUg-06-Qjn" firstAttribute="top" secondItem="pMb-Zt-dg2" secondAttribute="top" constant="42" id="msj-jc-CqI"/>
                                 </constraints>
                             </view>
@@ -1360,7 +1364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mha-aD-Sbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234" y="-98"/>
+            <point key="canvasLocation" x="-234.40000000000001" y="-98.050974512743636"/>
         </scene>
         <!--Comments Table View Controller-->
         <scene sceneID="8g2-OW-VF3">
@@ -2050,7 +2054,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pkf-DS-O0f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ckH-xv-5vN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="40f-CJ-cb7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="40f-CJ-cb7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

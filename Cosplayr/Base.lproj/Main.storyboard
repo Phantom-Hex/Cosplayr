@@ -284,7 +284,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.2034211131" green="0.67026827590000004" blue="0.71018863340000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="labelCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" textLabel="yRB-gy-Hez" style="IBUITableViewCellStyleDefault" id="dkJ-w2-0JF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="labelCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="conCell" textLabel="yRB-gy-Hez" detailTextLabel="PzS-e1-uBB" style="IBUITableViewCellStyleSubtitle" id="dkJ-w2-0JF">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dkJ-w2-0JF" id="3my-HE-CDz">
@@ -292,22 +292,29 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yRB-gy-Hez">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PzS-e1-uBB">
+                                                    <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vRO-F2-ys0" kind="show" id="9K6-9r-O3u"/>
+                                            <segue destination="vRO-F2-ys0" kind="showDetail" identifier="showCon" action="showViewController:sender:" id="9K6-9r-O3u"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="hSN-9f-mmA" id="YWH-i5-boU"/>
-                                    <outlet property="delegate" destination="hSN-9f-mmA" id="frc-cV-yIU"/>
+                                    <outlet property="dataSource" destination="hSN-9f-mmA" id="71F-Db-arx"/>
+                                    <outlet property="delegate" destination="hSN-9f-mmA" id="fFM-0J-phi"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -319,22 +326,13 @@
                             <constraint firstItem="7wp-WU-21T" firstAttribute="bottom" secondItem="SHz-Os-L3G" secondAttribute="top" id="aD0-WY-5HF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ckH-xv-5vN"/>
-                    <navigationItem key="navigationItem" title="Available Cosplayers" id="x8q-C5-xoV">
-                        <barButtonItem key="rightBarButtonItem" id="fUj-pP-q72">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qJp-uy-1sg">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up!"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Available Cosplayers" id="x8q-C5-xoV"/>
                     <connections>
                         <outlet property="voterTableView" destination="7wp-WU-21T" id="LIj-Lu-gew"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-232" y="1155"/>
+            <point key="canvasLocation" x="706.39999999999998" y="1154.5727136431785"/>
         </scene>
         <!--Sign Up Contestant View Controller-->
         <scene sceneID="dqJ-4t-GQM">
@@ -477,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftm-vI-gh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640.79999999999995" y="1154.5727136431785"/>
+            <point key="canvasLocation" x="1580" y="1154.5727136431785"/>
         </scene>
         <!--Voting Cosplayer Table View Controller-->
         <scene sceneID="cit-h4-X0D">
@@ -581,12 +579,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2f-80-HRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="1998"/>
+            <point key="canvasLocation" x="641" y="2020"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Convention Detail Controller-->
         <scene sceneID="636-Ol-0HN">
             <objects>
-                <tableViewController storyboardIdentifier="conventionDisplay" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vRO-F2-ys0" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="conventionDisplay" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vRO-F2-ys0" customClass="ConventionDetailController" customModule="Cosplayr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="h4O-F9-bEa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -595,19 +593,28 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IHR-aO-oGF">
-                                    <rect key="frame" x="87" y="22" width="200" height="200"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convention Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-LT-w9R">
-                                    <rect key="frame" x="47" y="238" width="280" height="40"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convention Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-LT-w9R">
+                                    <rect key="frame" x="47" y="240" width="280" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IHR-aO-oGF">
+                                    <rect key="frame" x="88" y="30" width="200" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="LNp-o3-7DM"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="ut5-LT-w9R" firstAttribute="leading" secondItem="Es5-5j-7hf" secondAttribute="leading" constant="47" id="17o-S3-W3v"/>
+                                <constraint firstItem="IHR-aO-oGF" firstAttribute="leading" secondItem="Es5-5j-7hf" secondAttribute="leading" constant="88" id="5Dy-Gy-2bh"/>
+                                <constraint firstItem="ut5-LT-w9R" firstAttribute="centerX" secondItem="Es5-5j-7hf" secondAttribute="centerX" id="BOJ-Dt-3rc"/>
+                                <constraint firstItem="ut5-LT-w9R" firstAttribute="top" secondItem="IHR-aO-oGF" secondAttribute="bottom" constant="10" id="GLQ-bJ-AMt"/>
+                                <constraint firstItem="IHR-aO-oGF" firstAttribute="top" secondItem="Es5-5j-7hf" secondAttribute="top" constant="30" id="TLr-j0-l3t"/>
+                                <constraint firstItem="IHR-aO-oGF" firstAttribute="centerX" secondItem="Es5-5j-7hf" secondAttribute="centerX" id="cR2-wM-dhh"/>
+                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection headerTitle="Essential Data" id="Skg-Ma-ki2">
@@ -640,10 +647,10 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Registered Cosplayers" id="xd9-sA-4wf">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="infoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" textLabel="CYC-5A-yeI" detailTextLabel="yd8-Pc-AK0" imageView="cz1-Ox-OGw" rowHeight="116" style="IBUITableViewCellStyleSubtitle" id="Er7-I8-F90">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="infoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cosCell" textLabel="CYC-5A-yeI" detailTextLabel="yd8-Pc-AK0" imageView="cz1-Ox-OGw" rowHeight="116" style="IBUITableViewCellStyleSubtitle" id="Er7-I8-F90">
                                         <rect key="frame" x="0.0" y="401" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Er7-I8-F90" id="3Ne-0Z-VZ3">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Er7-I8-F90" id="3Ne-0Z-VZ3" customClass="UITableViewCell">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -667,6 +674,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gXI-9F-Nwt" kind="showDetail" id="ts7-X5-aq1"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="51" id="jas-1k-k3D">
                                         <rect key="frame" x="0.0" y="517" width="375" height="51"/>
@@ -682,7 +692,10 @@
                                                     <state key="normal" title="Sign Up Here!"/>
                                                     <connections>
                                                         <action selector="castVoteButton:" destination="vRO-F2-ys0" eventType="touchUpInside" id="eog-cU-KD3"/>
-                                                        <segue destination="l8d-aW-7by" kind="presentation" id="iGG-X8-Sv5"/>
+                                                        <action selector="cosSignUpButton:" destination="vRO-F2-ys0" eventType="touchUpInside" id="BBA-kh-nWg"/>
+                                                        <segue destination="l8d-aW-7by" kind="popoverPresentation" popoverAnchorView="iCl-YX-NSk" id="iGG-X8-Sv5">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -698,7 +711,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="naC-VX-AcE"/>
                     <connections>
+                        <outlet property="conventionCoNameLabel" destination="ut5-LT-w9R" id="hJp-tP-3bC"/>
+                        <outlet property="conventionCountryLabel" destination="m3m-f1-tk1" id="cnz-tO-oje"/>
+                        <outlet property="conventionImageView" destination="IHR-aO-oGF" id="UmM-Xa-8eE"/>
+                        <outlet property="conventionNameLabel" destination="wg8-PE-36A" id="h0Z-4h-OhW"/>
                         <outlet property="cosplayerCountryLabel" destination="m3m-f1-tk1" id="6va-GD-CUQ"/>
+                        <outlet property="cosplayerEntryCell" destination="3Ne-0Z-VZ3" id="JCd-E8-ehj"/>
                         <outlet property="cosplayerImageView" destination="IHR-aO-oGF" id="kSx-wo-cpQ"/>
                         <outlet property="cosplayerLabel" destination="ut5-LT-w9R" id="OAg-fH-mKS"/>
                         <outlet property="cosplayerNameLabel" destination="wg8-PE-36A" id="yRQ-FS-qqJ"/>
@@ -925,7 +943,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Comment Discussion"/>
                                         <connections>
-                                            <segue destination="hSN-9f-mmA" kind="showDetail" id="B9s-Lf-zCt"/>
+                                            <segue destination="pkf-DS-O0f" kind="showDetail" id="B9s-Lf-zCt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1836,7 +1854,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="J8E-KP-bc1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="guestFace" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="J8E-KP-bc1">
                                 <rect key="frame" x="16" y="124" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="L9D-mv-6fZ"/>
@@ -2025,6 +2043,25 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1721" y="-429"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Pl7-k1-lpS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pkf-DS-O0f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ckH-xv-5vN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="40f-CJ-cb7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hSN-9f-mmA" kind="relationship" relationship="rootViewController" id="YGD-dO-25K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTa-rb-Mgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-232.80000000000001" y="1154.5727136431785"/>
         </scene>
     </scenes>
     <resources>

@@ -94,33 +94,35 @@ struct NetService {
     
     
     //COSPLAYER RELATED
-    func signUpCosplayer(firstname: String, lastname:String, country:String, email: String,pictureData: Data, referencePic1Data: Data, referencePic2Data: Data, referencePic3Data: Data, password: String, cosplayerID: String){
+    func signUpCosplayer(firstname: String, lastname:String, country:String, email: String, pictureData: Data, /* referencePic1Data: Data, referencePic2Data: Data, referencePic3Data: Data, */ password: String, cosplayerID: String){
         
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if let error = error {
                 print(error.localizedDescription)
             } else {
                 
-                self.setCosplayerInfo(user: user!, firstname: firstname, lastname: lastname, country: country, pictureData: pictureData, referencePic1Data: referencePic1Data, referencePic2Data: referencePic2Data, referencePic3Data: referencePic3Data, password: password, cosplayerID: cosplayerID)
+                self.setCosplayerInfo(user: user!, firstname: firstname, lastname: lastname, country: country, pictureData: pictureData, /* referencePic1Data: referencePic1Data, referencePic2Data: referencePic2Data, referencePic3Data: referencePic3Data, */password: password, cosplayerID: cosplayerID)
             }
         })
         
     }
     
-    private func setCosplayerInfo(user: Firebase.User, firstname: String, lastname:String, country:String,pictureData: Data, referencePic1Data: Data, referencePic2Data: Data, referencePic3Data: Data, password: String, cosplayerID: String){
+    private func setCosplayerInfo(user: Firebase.User, firstname: String, lastname:String, country:String,pictureData: Data, /* referencePic1Data: Data, referencePic2Data: Data, referencePic3Data: Data, */ password: String, cosplayerID: String){
         
         let profilePicturePath = "profileImage\(user.uid)image.jpg"
         let profilePictureRef = storageRef.child(profilePicturePath)
-        let ref1Path = "referenceImages1\(user.uid)image.jpg"
-        let ref1Ref = storageRef.child(ref1Path)
-        let ref2Path = "referenceImages2\(user.uid)image.jpg"
-        let ref2Ref = storageRef.child(ref2Path)
-        let ref3Path = "referenceImages3\(user.uid)image.jpg"
-        let ref3Ref = storageRef.child(ref3Path)
+        /*
+            let ref1Path = "referenceImages1\(user.uid)image.jpg"
+            let ref1Ref = storageRef.child(ref1Path)
+            let ref2Path = "referenceImages2\(user.uid)image.jpg"
+            let ref2Ref = storageRef.child(ref2Path)
+            let ref3Path = "referenceImages3\(user.uid)image.jpg"
+            let ref3Ref = storageRef.child(ref3Path)
+        */
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpeg"
 
-        
+        /*
         ref1Ref.putData(referencePic1Data, metadata: metaData) { (newMetadata, error) in
             if let error = error {
                 print(error.localizedDescription)
@@ -193,6 +195,7 @@ struct NetService {
                 
             }
         }
+        */
         
         profilePictureRef.putData(pictureData, metadata: metaData) { (newMetadata, error) in
             if let error = error {
@@ -225,7 +228,7 @@ struct NetService {
         
         
         let cosplayerRef = databaseRef.child("conventions").childByAutoId().child("cosplayers").child(user.uid)
-        let newCosplayer = Cosplayer(email: user.email!, firstname: firstname, lastname: lastname, uid: (Auth.auth().currentUser?.uid)!, profilePictureUrl: String(describing: user.photoURL), referencePhoto1: String(describing: user.photoURL), referencePhoto2: String(describing: user.photoURL), referencePhoto3: String(describing: user.photoURL), country: country, cosplayerID: cosplayerID)
+        let newCosplayer = Cosplayer(email: user.email!, firstname: firstname, lastname: lastname, uid: (Auth.auth().currentUser?.uid)!, profilePictureUrl: String(describing: user.photoURL), /*referencePhoto1: String(describing: user.photoURL), referencePhoto2: String(describing: user.photoURL), referencePhoto3: String(describing: user.photoURL), */ country: country, cosplayerID: cosplayerID)
         
         cosplayerRef.setValue(newCosplayer.toAnyObject()) { (error, ref) in
             if error == nil {
@@ -329,10 +332,6 @@ struct NetService {
             
             let user: User = User(snapshot: currentUser)
             completion(user)
-            
-            
-            
-            
         }) { (error) in
             print(error.localizedDescription)
             
@@ -363,6 +362,50 @@ struct NetService {
         }
         
         
+    }
+    
+    func fetchAllConventions(completion: @escaping([Convention])->Void){
+        
+        let usersRef = databaseRef.child("conventions")
+        usersRef.observe(.value, with: { (users) in
+            
+            var resultArray = [Convention]()
+            for user in users.children {
+                
+                let user = Convention(snapshot: user as! DataSnapshot)
+                let currentUser = Auth.auth().currentUser!
+                
+                if user.uid != currentUser.uid {
+                    resultArray.append(user)
+                }
+                completion(resultArray)
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func fetchAllCosplayers(completion: @escaping([Cosplayer])->Void){
+        
+        let usersRef = databaseRef.child("conventions").childByAutoId().child("cosplayers")
+        usersRef.observe(.value, with: { (users) in
+            
+            var resultArray = [Cosplayer]()
+            for user in users.children {
+                
+                let user = Cosplayer(snapshot: user as! DataSnapshot)
+                let currentUser = Auth.auth().currentUser!
+                
+                if user.uid != currentUser.uid {
+                    resultArray.append(user)
+                }
+                completion(resultArray)
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     func logOut(completion: ()->()){

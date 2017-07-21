@@ -1,52 +1,57 @@
 //
-//  VotingCosplayerTableViewController.swift
-//  
+//  ConventionDetailController.swift
+//  Cosplayr
 //
-//  Created by Tony T. on 7/20/17.
-//
+//  Created by Tony T. on 7/21/17.
+//  Copyright © 2017 Phantom Hex. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class VotingCosplayerTableViewController: UITableViewController {
+class ConventionDetailController: UITableViewController {
 
+    
     var ref: DatabaseReference?
     var netService = NetService()
     
-    @IBOutlet weak var cosplayerImageView: UIImageView!
-    @IBOutlet weak var cosplayerLabel: UILabel!
-    @IBOutlet weak var cosplayerNameLabel: UILabel!
-    @IBOutlet weak var cosplayerCountryLabel: UILabel!
+    @IBOutlet weak var conventionNameLabel: UILabel!
+    @IBOutlet weak var conventionCountryLabel: UILabel!
+    @IBOutlet weak var conventionImageView: UIImageView!
+    @IBOutlet weak var conventionCoNameLabel: UILabel!
     
-    @IBAction func castVoteButton(_ sender: Any) {
+    @IBOutlet weak var cosplayerEntryCell: UITableViewCell!
+    @IBAction func cosSignUpButton(_ sender: Any) {
     }
     
     
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
+        // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        prepareCosplayer()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        setGuestConInfo()
     }
-
-    private func prepareCosplayer() {
+    
+    private func setGuestConInfo() {
         if let ref = ref {
-            netService.fetchGuestUser(ref: ref, completion: { (user) in
-                if let user = user {
-                    self.cosplayerCountryLabel.text = user.country
-                    self.cosplayerLabel.text = user.firstname
-                    self.cosplayerNameLabel.text = user.lastname
-                    self.cosplayerImageView.sd_setImage(with: URL(string: user.profilePictureUrl), placeholderImage: UIImage(named: "default"))
+            netService.fetchGuestUser(ref: ref, completion: { (convention) in
+                if let convention = convention {
+                    self.conventionCoNameLabel.text = convention.firstname
+                    self.conventionCountryLabel.text = convention.country
+                    self.conventionNameLabel.text = "\(convention.firstname) \(convention.lastname)"
+                    self.conventionImageView.sd_setImage(with: URL(string: convention.profilePictureUrl), placeholderImage: UIImage(named: "default"))
                 }
             })
         }

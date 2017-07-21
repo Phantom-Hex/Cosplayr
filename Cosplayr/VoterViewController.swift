@@ -9,23 +9,19 @@
 import UIKit
 import Firebase
 
-class VoterViewController: UIViewController {
+class VoterViewController: UITableViewController {
 
     @IBOutlet var voterTableView: UITableView!
+    
+    var ref: DatabaseReference?
     var sections = [Section]()
-
- /*
-     var sections = [
-        Section(convention: "Ohio Area", cons: ["FandomFest", "Ohayocon", "Animatic Con", "A&G Con"], expanded: false),
-        Section(convention: "NC Area", cons: ["Animazement", "Tri-City Con"], expanded: false),
-        Section(convention: "California Area", cons: ["Anime Expo","NinjaCon","Anime los Angeles"], expanded: false)
-    ]
- */
+    
+    var conArray = [Convention]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target : self, action: #selector(handleCancel))
         
         fetchPlayers()
     }
@@ -52,39 +48,40 @@ class VoterViewController: UIViewController {
         })
     }
     
+    func handleCancel(){
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     
     //TABLE RELATED
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections.count
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections.count
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "conCell")
+        
+        let section = sections[indexPath.row]
+        cell.textLabel?.text = section.coName
+        cell.detailTextLabel?.text = section.country
+        
+        return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 2
-    }
     
     
-    
-    
-    
-    
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showCon" {
+//            if let indexPath = tableView.indexPathForSelectedRow?.first {
+//                let conVC = segue.destination as! ConventionDetailController
+//                conVC.ref = conArray[indexPath].ref
+//            }
+//        }
+//    }
+    
+    
 
 }

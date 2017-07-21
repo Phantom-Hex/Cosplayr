@@ -1,0 +1,237 @@
+
+/* Class = "UILabel"; text = "Update First & Last Name"; ObjectID = "2Db-3v-MIe"; */
+"2Db-3v-MIe.text" = "Update First & Last Name";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "33c-dg-SMe"; */
+"33c-dg-SMe.placeholder" = "E-Mail";
+
+/* Class = "UITextField"; placeholder = "Firstname"; ObjectID = "3Pz-5c-imw"; */
+"3Pz-5c-imw.placeholder" = "Firstname";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "7lc-Yw-cnS"; */
+"7lc-Yw-cnS.text" = "0";
+
+/* Class = "UILabel"; text = "Delete Account"; ObjectID = "9Ai-mi-8Q9"; */
+"9Ai-mi-8Q9.text" = "Delete Account";
+
+/* Class = "UITextField"; placeholder = "Cosplayer Name"; ObjectID = "A8a-po-K56"; */
+"A8a-po-K56.placeholder" = "Cosplayer Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ACD-d1-eI4"; */
+"ACD-d1-eI4.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "BHu-IJ-DFC"; */
+"BHu-IJ-DFC.placeholder" = "Password";
+
+/* Class = "UIViewController"; title = "Login"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Login";
+
+/* Class = "UILabel"; text = "Change password"; ObjectID = "C9d-Ck-ppn"; */
+"C9d-Ck-ppn.text" = "Change password";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "CYC-5A-yeI"; */
+"CYC-5A-yeI.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Comment"; ObjectID = "CdG-iT-Wba"; */
+"CdG-iT-Wba.normalTitle" = "Comment";
+
+/* Class = "UITextView"; text = "Enter your text here"; ObjectID = "DWM-m8-sau"; */
+"DWM-m8-sau.text" = "Enter your text here";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "FGy-q7-MoS"; */
+"FGy-q7-MoS.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "GEB-y9-oi8"; */
+"GEB-y9-oi8.text" = "Email";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "GON-MW-Ygh"; */
+"GON-MW-Ygh.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "Giz-ML-dah"; */
+"Giz-ML-dah.placeholder" = "E-Mail";
+
+/* Class = "UILabel"; text = "Cosplayr"; ObjectID = "HBK-iZ-lKL"; */
+"HBK-iZ-lKL.text" = "Cosplayr";
+
+/* Class = "UITableViewSection"; headerTitle = "Essential Data"; ObjectID = "He8-Qb-Hz6"; */
+"He8-Qb-Hz6.headerTitle" = "Essential Data";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "IDQ-c1-j3i"; */
+"IDQ-c1-j3i.text" = "0";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Idz-My-Zsf"; */
+"Idz-My-Zsf.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Upload Photo"; ObjectID = "JKE-jM-RtP"; */
+"JKE-jM-RtP.normalTitle" = "Upload Photo";
+
+/* Class = "UIButton"; normalTitle = "Create a new account"; ObjectID = "Kg1-ex-sgq"; */
+"Kg1-ex-sgq.normalTitle" = "Create a new account";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "MDr-fi-c8H"; */
+"MDr-fi-c8H.text" = "0";
+
+/* Class = "UILabel"; text = "Cosplayer Name"; ObjectID = "N9n-7l-UYT"; */
+"N9n-7l-UYT.text" = "Cosplayer Name";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "NIm-IU-HJT"; */
+"NIm-IU-HJT.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "Lastname"; ObjectID = "O8m-8S-yGv"; */
+"O8m-8S-yGv.text" = "Lastname";
+
+/* Class = "UILabel"; text = "12 min"; ObjectID = "P8P-XZ-2RS"; */
+"P8P-XZ-2RS.text" = "12 min";
+
+/* Class = "UITableViewSection"; headerTitle = "Reference Photography"; ObjectID = "PAN-it-fdt"; */
+"PAN-it-fdt.headerTitle" = "Reference Photography";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "PzS-e1-uBB"; */
+"PzS-e1-uBB.text" = "Detail";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QAv-lp-MwC"; */
+"QAv-lp-MwC.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Qb2-4g-0kI"; */
+"Qb2-4g-0kI.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "Ryt-yE-5op"; */
+"Ryt-yE-5op.normalTitle" = "Sign In";
+
+/* Class = "UITableViewSection"; headerTitle = "Essential Data"; ObjectID = "Skg-Ma-ki2"; */
+"Skg-Ma-ki2.headerTitle" = "Essential Data";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "SoM-Dk-YvI"; */
+"SoM-Dk-YvI.placeholder" = "Country";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Tb8-YM-eYN"; */
+"Tb8-YM-eYN.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "UXD-m3-bXe"; */
+"UXD-m3-bXe.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "Uf1-XA-mkb"; */
+"Uf1-XA-mkb.placeholder" = "E-Mail";
+
+/* Class = "UILabel"; text = "12 min"; ObjectID = "Uxe-WW-YVu"; */
+"Uxe-WW-YVu.text" = "12 min";
+
+/* Class = "UIButton"; normalTitle = "Cast Vote!"; ObjectID = "b4G-eV-xsC"; */
+"b4G-eV-xsC.normalTitle" = "Cast Vote!";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "bEd-f4-xzX"; */
+"bEd-f4-xzX.placeholder" = "Country";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "bJH-uD-wFf"; */
+"bJH-uD-wFf.placeholder" = "Last Name";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "bUg-06-Qjn"; */
+"bUg-06-Qjn.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "bzK-Z2-5pn"; */
+"bzK-Z2-5pn.text" = "Country";
+
+/* Class = "UITextView"; text = "Enter your text here"; ObjectID = "cIq-Kv-WRl"; */
+"cIq-Kv-WRl.text" = "Enter your text here";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ckH-xv-5vN"; */
+"ckH-xv-5vN.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Post"; ObjectID = "dFC-0X-ZVJ"; */
+"dFC-0X-ZVJ.normalTitle" = "Post";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "eIw-hB-0R7"; */
+"eIw-hB-0R7.text" = "0";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "gIn-R6-eRv"; */
+"gIn-R6-eRv.text" = "Email";
+
+/* Class = "UIViewController"; title = "SignUp"; ObjectID = "gkG-hK-nn2"; */
+"gkG-hK-nn2.title" = "SignUp";
+
+/* Class = "UIViewController"; title = "Voting"; ObjectID = "hSN-9f-mmA"; */
+"hSN-9f-mmA.title" = "Voting";
+
+/* Class = "UIButton"; normalTitle = "Sign Up Here!"; ObjectID = "iCl-YX-NSk"; */
+"iCl-YX-NSk.normalTitle" = "Sign Up Here!";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "ix4-6U-b02"; */
+"ix4-6U-b02.text" = "Country";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iyZ-YC-J1f"; */
+"iyZ-YC-J1f.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jLr-Gv-NYN"; */
+"jLr-Gv-NYN.text" = "Label";
+
+/* Class = "UILabel"; text = "12 min"; ObjectID = "juk-0T-ko8"; */
+"juk-0T-ko8.text" = "12 min";
+
+/* Class = "UILabel"; text = "12 min"; ObjectID = "k8I-TH-3K0"; */
+"k8I-TH-3K0.text" = "12 min";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "lX6-YN-OSD"; */
+"lX6-YN-OSD.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lfI-g0-aJR"; */
+"lfI-g0-aJR.text" = "Label";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "m3m-f1-tk1"; */
+"m3m-f1-tk1.text" = "Country";
+
+/* Class = "UILabel"; text = "Firstname"; ObjectID = "oTq-gR-ber"; */
+"oTq-gR-ber.text" = "Firstname";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "poE-KT-Lwd"; */
+"poE-KT-Lwd.text" = "Label";
+
+/* Class = "UILabel"; text = "Cosplayer ID"; ObjectID = "q86-ch-a7B"; */
+"q86-ch-a7B.text" = "Cosplayer ID";
+
+/* Class = "UIButton"; normalTitle = "Sign Up!"; ObjectID = "qJp-uy-1sg"; */
+"qJp-uy-1sg.normalTitle" = "Sign Up!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rop-V6-K9W"; */
+"rop-V6-K9W.text" = "Label";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "svN-zb-BgV"; */
+"svN-zb-BgV.text" = "Country";
+
+/* Class = "UITextField"; placeholder = "LastName"; ObjectID = "uIy-ou-sWm"; */
+"uIy-ou-sWm.placeholder" = "LastName";
+
+/* Class = "UILabel"; text = "Convention Name"; ObjectID = "ut5-LT-w9R"; */
+"ut5-LT-w9R.text" = "Convention Name";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "vGr-9g-XSP"; */
+"vGr-9g-XSP.text" = "Country";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "wg8-PE-36A"; */
+"wg8-PE-36A.text" = "Name";
+
+/* Class = "UILabel"; text = "Update Email"; ObjectID = "x7w-e9-Bk8"; */
+"x7w-e9-Bk8.text" = "Update Email";
+
+/* Class = "UINavigationItem"; title = "Available Cosplayers"; ObjectID = "x8q-C5-xoV"; */
+"x8q-C5-xoV.title" = "Available Cosplayers";
+
+/* Class = "UITableViewSection"; headerTitle = "Registered Cosplayers"; ObjectID = "xd9-sA-4wf"; */
+"xd9-sA-4wf.headerTitle" = "Registered Cosplayers";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "yQC-jr-020"; */
+"yQC-jr-020.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "yRB-gy-Hez"; */
+"yRB-gy-Hez.text" = "Title";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "yd8-Pc-AK0"; */
+"yd8-Pc-AK0.text" = "Subtitle";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "z92-mJ-xix"; */
+"z92-mJ-xix.normalTitle" = "Continue";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "zHu-Jy-jtX"; */
+"zHu-Jy-jtX.placeholder" = "First Name";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "zxS-TX-hSm"; */
+"zxS-TX-hSm.normalTitle" = "Continue";

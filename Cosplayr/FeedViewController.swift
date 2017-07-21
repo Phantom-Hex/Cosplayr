@@ -71,7 +71,7 @@ class FeedViewController: UIViewController {
     }
     @IBAction func logOutAction(_ sender: UIButton) {
         netService.logOut {
-            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "login") as! LoginViewController
+            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login") as! LoginViewController
             loginVC.modalTransitionStyle = .crossDissolve
             self.present(loginVC, animated: true, completion: nil)
         }

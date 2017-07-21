@@ -21,9 +21,9 @@ struct Cosplayer {
     var ref: DatabaseReference!
     var key: String! = ""
     var isVerified: Bool! = true
-    var referencePhoto1: String
-    var referencePhoto2: String
-    var referencePhoto3: String
+//    var referencePhoto1: String
+//    var referencePhoto2: String
+//    var referencePhoto3: String
     
     
     
@@ -36,16 +36,16 @@ struct Cosplayer {
         self.uid = (snapshot.value as! NSDictionary)["uid"] as! String
         self.country = (snapshot.value as! NSDictionary)["country"] as! String
         self.profilePictureUrl = (snapshot.value as! NSDictionary)["profilePictureUrl"] as! String
-        self.referencePhoto1 = (snapshot.value as! NSDictionary)["referencePhoto1"] as! String
-        self.referencePhoto2 = (snapshot.value as! NSDictionary)["referencePhoto2"] as! String
-        self.referencePhoto3 = (snapshot.value as! NSDictionary)["referencePhoto3"] as! String
+//        self.referencePhoto1 = (snapshot.value as! NSDictionary)["referencePhoto1"] as! String
+//        self.referencePhoto2 = (snapshot.value as! NSDictionary)["referencePhoto2"] as! String
+//        self.referencePhoto3 = (snapshot.value as! NSDictionary)["referencePhoto3"] as! String
         self.ref = snapshot.ref
         self.key = snapshot.key
         self.isVerified = (snapshot.value as! NSDictionary)["isVerified"] as! Bool
     }
     
     
-    init(email: String, firstname: String, lastname: String, uid: String, profilePictureUrl: String, referencePhoto1: String, referencePhoto2: String, referencePhoto3: String, country: String, cosplayerID: String){
+    init(email: String, firstname: String, lastname: String, uid: String, profilePictureUrl: String, /*referencePhoto1: String, referencePhoto2: String, referencePhoto3: String,*/ country: String, cosplayerID: String){
         
         self.email = email
         self.firstname = firstname
@@ -53,9 +53,11 @@ struct Cosplayer {
         self.cosplayerID = cosplayerID
         self.uid = uid
         self.profilePictureUrl = profilePictureUrl
+        /*
         self.referencePhoto1 = referencePhoto1
         self.referencePhoto2 = referencePhoto2
         self.referencePhoto3 = referencePhoto3
+        */
         self.country = country
         self.ref = Database.database().reference()
     }
@@ -72,9 +74,11 @@ struct Cosplayer {
                 "cosplayerID":self.cosplayerID,
                 "country":self.country,
                 "uid":self.uid,
+                /*
                 "referencePhoto1":self.referencePhoto1,
                 "referencePhoto2": self.referencePhoto2,
-                "referencePhoto3":self.referencePhoto3,
+                "referencePhoto3":self.referencePhoto3, 
+                */
                 "profilePictureUrl":profilePictureUrl,
                 "isVerified":self.isVerified]
     }

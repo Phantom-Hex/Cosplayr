@@ -23,9 +23,6 @@ class SignUpContestantViewController: UIViewController, UITextFieldDelegate, UIN
     @IBOutlet weak var cosplayerIDLabel: UILabel!
     
     @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var cosplayer1ImageView: UIImageView!
-    @IBOutlet weak var cosplayer2ImageView: UIImageView!
-    @IBOutlet weak var cosplayer3ImageView: UIImageView!
     
     
     override var prefersStatusBarHidden: Bool {
@@ -59,9 +56,6 @@ class SignUpContestantViewController: UIViewController, UITextFieldDelegate, UIN
         let cosplayerID = cosplayerIDLabel.text!.appending(cosplayerIDgenerator)
         
         let data = UIImageJPEGRepresentation(userImageView.image!, 0.2)!
-        let data1 = UIImageJPEGRepresentation(cosplayer1ImageView.image!, 0.5)!
-        let data2 = UIImageJPEGRepresentation(cosplayer2ImageView.image!, 0.5)!
-        let data3 = UIImageJPEGRepresentation(cosplayer3ImageView.image!, 0.5)!
         
         if finalEmail.isEmpty || password.isEmpty || firstname.isEmpty || lastname.isEmpty || country.isEmpty {
             let alert = SCLAlertView()
@@ -69,7 +63,7 @@ class SignUpContestantViewController: UIViewController, UITextFieldDelegate, UIN
         }else {
             
             if isValidEmail(email: finalEmail) {
-                self.netService.signUpCosplayer(firstname: firstname, lastname: lastname, country: country, email: email, pictureData: data, referencePic1Data: data1, referencePic2Data: data2, referencePic3Data: data3, password: password, cosplayerID: cosplayerID)
+                self.netService.signUpCosplayer(firstname: firstname, lastname: lastname, country: country, email: email, pictureData: data, password: password, cosplayerID: cosplayerID)
             } else {
                 let alert = SCLAlertView()
                 _ = alert.showError("OOPS🙊", subTitle: "Passwords do not match. Please try again.")

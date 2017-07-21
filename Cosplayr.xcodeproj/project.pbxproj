@@ -13,6 +13,7 @@
 		DB1057071F157D190031A5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1057061F157D190031A5DF /* Assets.xcassets */; };
 		DB10570A1F157D190031A5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1057081F157D190031A5DF /* LaunchScreen.storyboard */; };
 		DB1057151F157DC10031A5DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1057141F157DC10031A5DF /* GoogleService-Info.plist */; };
+		DB3F58121F22627500625D54 /* ConventionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3F58111F22627500625D54 /* ConventionDetailController.swift */; };
 		DBBC13851F1679C200BADBD8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC13841F1679C200BADBD8 /* Post.swift */; };
 		DBBC13871F1679F500BADBD8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC13861F1679F500BADBD8 /* User.swift */; };
 		DBBC13891F167A4F00BADBD8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC13881F167A4F00BADBD8 /* Comment.swift */; };
@@ -23,7 +24,6 @@
 		DBBC140B1F16911200BADBD8 /* PostTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */; };
 		DBBC14111F16991D00BADBD8 /* VoterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */; };
 		DBBC14131F16992A00BADBD8 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14121F16992A00BADBD8 /* Section.swift */; };
-		DBBC14151F16993700BADBD8 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC14141F16993700BADBD8 /* ExpandableHeaderView.swift */; };
 		DBC159731F2018D7005901F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159721F2018D7005901F9 /* LoginViewController.swift */; };
 		DBC159751F2018FD005901F9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159741F2018FD005901F9 /* SignUpViewController.swift */; };
 		DBC159771F201938005901F9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159761F201938005901F9 /* FeedViewController.swift */; };
@@ -37,7 +37,6 @@
 		DBC159891F20FF02005901F9 /* VotingCosplayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC159881F20FF02005901F9 /* VotingCosplayerTableViewController.swift */; };
 		DBC1598B1F211026005901F9 /* SignUpContestantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1598A1F211026005901F9 /* SignUpContestantViewController.swift */; };
 		DBC8E7681F16CB69003CA1B6 /* CustomizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E7671F16CB69003CA1B6 /* CustomizableView.swift */; };
-		DBC8E76A1F16CBA4003CA1B6 /* CustomizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E7691F16CBA4003CA1B6 /* CustomizableImageView.swift */; };
 		DBC8E76C1F16CBCC003CA1B6 /* CustomizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E76B1F16CBCC003CA1B6 /* CustomizableButton.swift */; };
 		DBC8E76E1F16CC08003CA1B6 /* CustomizableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E76D1F16CC08003CA1B6 /* CustomizableTextField.swift */; };
 		DBC8E7701F16E13B003CA1B6 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E76F1F16E13B003CA1B6 /* SCLAlertView.swift */; };
@@ -56,6 +55,8 @@
 		DB1057091F157D190031A5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB10570B1F157D190031A5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB1057141F157DC10031A5DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB3F58111F22627500625D54 /* ConventionDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConventionDetailController.swift; sourceTree = "<group>"; };
+		DB3F58141F22760400625D54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		DBBC13841F1679C200BADBD8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DBBC13861F1679F500BADBD8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DBBC13881F167A4F00BADBD8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		DBBC140A1F16911200BADBD8 /* PostTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTextViewCell.swift; sourceTree = "<group>"; };
 		DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoterViewController.swift; sourceTree = "<group>"; };
 		DBBC14121F16992A00BADBD8 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		DBBC14141F16993700BADBD8 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		DBBC14181F16C3D800BADBD8 /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Black.ttf"; path = "Fonts/TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
 		DBBC14191F16C3D800BADBD8 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Bold.ttf"; path = "Fonts/TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 		DBBC141A1F16C3D800BADBD8 /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-BoldItalic.ttf"; path = "Fonts/TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 		DBC159881F20FF02005901F9 /* VotingCosplayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotingCosplayerTableViewController.swift; sourceTree = "<group>"; };
 		DBC1598A1F211026005901F9 /* SignUpContestantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContestantViewController.swift; sourceTree = "<group>"; };
 		DBC8E7671F16CB69003CA1B6 /* CustomizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableView.swift; sourceTree = "<group>"; };
-		DBC8E7691F16CBA4003CA1B6 /* CustomizableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableImageView.swift; sourceTree = "<group>"; };
 		DBC8E76B1F16CBCC003CA1B6 /* CustomizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableButton.swift; sourceTree = "<group>"; };
 		DBC8E76D1F16CC08003CA1B6 /* CustomizableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableTextField.swift; sourceTree = "<group>"; };
 		DBC8E76F1F16E13B003CA1B6 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
@@ -153,7 +152,6 @@
 				DB1057161F157DC50031A5DF /* P-Lists */,
 				DB1057131F157D3C0031A5DF /* Things */,
 				DB1057121F157D340031A5DF /* ViewControllers */,
-				DB1057111F157D2A0031A5DF /* Models */,
 				DB1056FF1F157D190031A5DF /* AppDelegate.swift */,
 				DB1057081F157D190031A5DF /* LaunchScreen.storyboard */,
 				DB1057031F157D190031A5DF /* Main.storyboard */,
@@ -176,7 +174,6 @@
 		DB1057121F157D340031A5DF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DBD9CA801F17F31A00E7CA72 /* Conventions */,
 				DBBC140D1F1698EA00BADBD8 /* Voting */,
 				DBBC140C1F1698D100BADBD8 /* Social VC */,
 				DBBC14011F16883B00BADBD8 /* Cells */,
@@ -237,6 +234,7 @@
 		DBBC140C1F1698D100BADBD8 /* Social VC */ = {
 			isa = PBXGroup;
 			children = (
+				DB1057111F157D2A0031A5DF /* Models */,
 				DBC8E76F1F16E13B003CA1B6 /* SCLAlertView.swift */,
 				DBC159781F2019AB005901F9 /* UserProfileViewController.swift */,
 				DBC1597C1F201A28005901F9 /* GuestUserViewController.swift */,
@@ -253,10 +251,10 @@
 		DBBC140D1F1698EA00BADBD8 /* Voting */ = {
 			isa = PBXGroup;
 			children = (
-				DBBC14141F16993700BADBD8 /* ExpandableHeaderView.swift */,
 				DBBC14121F16992A00BADBD8 /* Section.swift */,
 				DBC159881F20FF02005901F9 /* VotingCosplayerTableViewController.swift */,
 				DBBC140F1F16991D00BADBD8 /* VoterViewController.swift */,
+				DB3F58111F22627500625D54 /* ConventionDetailController.swift */,
 				DBC1598A1F211026005901F9 /* SignUpContestantViewController.swift */,
 			);
 			name = Voting;
@@ -266,18 +264,10 @@
 			isa = PBXGroup;
 			children = (
 				DBC8E7671F16CB69003CA1B6 /* CustomizableView.swift */,
-				DBC8E7691F16CBA4003CA1B6 /* CustomizableImageView.swift */,
 				DBC8E76B1F16CBCC003CA1B6 /* CustomizableButton.swift */,
 				DBC8E76D1F16CC08003CA1B6 /* CustomizableTextField.swift */,
 			);
 			name = Customizables;
-			sourceTree = "<group>";
-		};
-		DBD9CA801F17F31A00E7CA72 /* Conventions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Conventions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC8E76A1F16CBA4003CA1B6 /* CustomizableImageView.swift in Sources */,
+				DB3F58121F22627500625D54 /* ConventionDetailController.swift in Sources */,
 				DBC159791F2019AB005901F9 /* UserProfileViewController.swift in Sources */,
 				DBBC14071F16901C00BADBD8 /* CommentImageViewCell.swift in Sources */,
 				DBC8E7681F16CB69003CA1B6 /* CustomizableView.swift in Sources */,
@@ -422,7 +412,6 @@
 				DBC1597B1F2019E3005901F9 /* NetService.swift in Sources */,
 				DBC8E76C1F16CBCC003CA1B6 /* CustomizableButton.swift in Sources */,
 				DBC159731F2018D7005901F9 /* LoginViewController.swift in Sources */,
-				DBBC14151F16993700BADBD8 /* ExpandableHeaderView.swift in Sources */,
 				DBBC14091F16906700BADBD8 /* CommentTableTextViewCell.swift in Sources */,
 				DBC159851F201C58005901F9 /* Extensions.swift in Sources */,
 				DBBC14051F168FEE00BADBD8 /* PostImageTableViewCell.swift in Sources */,
@@ -446,6 +435,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DB1057041F157D190031A5DF /* Base */,
+				DB3F58141F22760400625D54 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -13,10 +13,6 @@ class VotingCosplayerTableViewController: UITableViewController {
 
     
     @IBOutlet weak var cosplayerImageView: UIImageView!
-    @IBOutlet weak var cosplayerRef1ImageView: UIImageView!
-    @IBOutlet weak var cosplayerRef2ImageView: UIImageView!
-    @IBOutlet weak var cosplayerRef3ImageView: UIImageView!
-    
     @IBOutlet weak var cosplayerLabel: UILabel!
     @IBOutlet weak var cosplayerNameLabel: UILabel!
     @IBOutlet weak var cosplayerCountryLabel: UILabel!

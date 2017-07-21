@@ -85,7 +85,7 @@ class SignUpContestantViewController: UIViewController, UITextFieldDelegate, UIN
                 self.emailTextField.text = user.email
                 self.firstnameTextField.text = user.firstname
                 self.lastnameTextField.text = user.lastname
-                self.userImageView.sd_setImage(with: URL(string: user.profilePictureUrl!), placeholderImage: UIImage(named: "default"))
+                self.userImageView.sd_setImage(with: URL(string: user.profilePictureUrl), placeholderImage: UIImage(named: "default"))
             }
         }
     }

@@ -12,25 +12,25 @@ import Firebase
 struct User {
     
     var email: String!
-    var firstname: String?
-    var lastname: String?
+    var firstname: String
+    var lastname: String
     var uid: String!
-    var profilePictureUrl: String?
-    var country: String?
+    var profilePictureUrl: String
+    var country: String
     var ref: DatabaseReference!
-    var key: String! = ""
-    var isVerified: Bool! = false
+    var key: String = ""
+    var isVerified: Bool = false
     
     
     
     init(snapshot: DataSnapshot){
         
         self.email = (snapshot.value as! NSDictionary)["email"] as! String
-        self.firstname = (snapshot.value as! NSDictionary)["firstname"] as? String
-        self.lastname = (snapshot.value as! NSDictionary)["lastname"] as? String
+        self.firstname = (snapshot.value as! NSDictionary)["firstname"] as! String
+        self.lastname = (snapshot.value as! NSDictionary)["lastname"] as! String
         self.uid = (snapshot.value as! NSDictionary)["uid"] as! String
-        self.country = (snapshot.value as! NSDictionary)["country"] as? String
-        self.profilePictureUrl = (snapshot.value as! NSDictionary)["profilePictureUrl"] as? String
+        self.country = (snapshot.value as! NSDictionary)["country"] as! String
+        self.profilePictureUrl = (snapshot.value as! NSDictionary)["profilePictureUrl"] as! String
         self.ref = snapshot.ref
         self.key = snapshot.key
         self.isVerified = (snapshot.value as! NSDictionary)["isVerified"] as! Bool
@@ -55,6 +55,6 @@ struct User {
     }
 
     func toAnyObject() -> [String: Any]{
-        return ["email":self.email,"firstname":self.firstname!,"lastname":self.lastname!,"country":self.country!,"uid":self.uid,"profilePictureUrl":profilePictureUrl!,"isVerified":self.isVerified]
+        return ["email":self.email,"firstname":self.firstname,"lastname":self.lastname,"country":self.country,"uid":self.uid,"profilePictureUrl":profilePictureUrl,"isVerified":self.isVerified]
     }
 }

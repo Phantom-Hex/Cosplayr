@@ -11,11 +11,11 @@ import Firebase
 
 class GuestUserViewController: UIViewController {
     
-    @IBOutlet weak var firstnameLabel: CustomizableTextfield!
-    @IBOutlet weak var lastnameLabel: CustomizableTextfield!
+    @IBOutlet weak var firstnameLabel: UILabel!
+    @IBOutlet weak var lastnameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
-    @IBOutlet weak var guestImageView: CustomizableImageView!
+    @IBOutlet weak var guestImageView: UIImageView!
     
     
     var ref: DatabaseReference?
@@ -36,7 +36,7 @@ class GuestUserViewController: UIViewController {
                     self.emailLabel.text = user.email
                     self.firstnameLabel.text = user.firstname
                     self.lastnameLabel.text = user.lastname
-                    self.guestImageView.sd_setImage(with: URL(string: user.profilePictureUrl!), placeholderImage: UIImage(named: "default"))
+                    self.guestImageView.sd_setImage(with: URL(string: user.profilePictureUrl), placeholderImage: UIImage(named: "default"))
                 }
             })
         }

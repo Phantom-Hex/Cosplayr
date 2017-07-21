@@ -39,7 +39,7 @@ class UserProfileViewController: UIViewController {
                 self.emailLabel.text = user.email
                 self.firstnameTextField.text = user.firstname
                 self.lastnameTextfield.text = user.lastname
-                self.userProfileImageView.sd_setImage(with: URL(string: user.profilePictureUrl!), placeholderImage: UIImage(named: "default"))
+                self.userProfileImageView.sd_setImage(with: URL(string: user.profilePictureUrl), placeholderImage: UIImage(named: "default"))
             }
         }
     }

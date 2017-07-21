@@ -9,12 +9,10 @@
 import UIKit
 import Firebase
 
-class VoterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ExpandableHeaderViewDelegate {
+class VoterViewController: UIViewController {
 
     @IBOutlet var voterTableView: UITableView!
     var sections = [Section]()
-    
-    
 
  /*
      var sections = [
@@ -69,38 +67,8 @@ class VoterViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 44
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if(sections[indexPath.section].expanded){
-            return 44
-        } else {
-            return 0
-        }
-    }
-    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 2
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = ExpandableHeaderView()
-        header.customInit(title: sections[section].convention!, section: section, delegate: self)
-        return header
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell")!
-        cell.textLabel?.text = sections[indexPath.section].cosplayer
-        return cell
-    }
-    
-    func toggleSection(header: ExpandableHeaderView, section: Int) {
-        sections[section].expanded = !sections[section].expanded
-        
-        voterTableView.beginUpdates()
-        for i in 0 ..< sections.count {
-            voterTableView.reloadRows(at: [IndexPath(row: i, section: section)], with: .automatic)
-        }
-        voterTableView.endUpdates()
     }
     
     

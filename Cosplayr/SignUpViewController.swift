@@ -24,11 +24,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UINavigationC
         return true
     }
     
-    var networkingService = NetService()
+    var netService = NetService()
     
-    @IBOutlet weak var userProfileImageView: CustomizableImageView!
+    @IBOutlet weak var userProfileImageView: UIImageView!
     @IBAction func createAccountButton(_ sender: Any) {
         createAccountAction()
+    }
+    @IBAction func choosePicture(_ sender: Any) {
+        choosePictureAction()
     }
     
     
@@ -67,7 +70,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UINavigationC
             if password == reenterPassword {
                 
                 if isValidEmail(email: finalEmail) {
-                    self.networkingService.signUp(firstname: firstname, lastname: lastname, country: country, email: finalEmail, pictureData: data, password: password)
+                    self.netService.signUp(firstname: firstname, lastname: lastname, country: country, email: finalEmail, pictureData: data, password: password)
                 }
                 
             } else {
@@ -105,7 +108,7 @@ extension SignUpViewController {
     }
     
     
-    @IBAction func choosePictureAction(_ sender: UITapGestureRecognizer) {
+    func choosePictureAction() {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
         pickerController.allowsEditing = true
@@ -114,11 +117,6 @@ extension SignUpViewController {
         pickerController.popoverPresentationController?.sourceView = userProfileImageView
         let alertController = UIAlertController(title: "Add a Picture", message: "Choose From", preferredStyle: .actionSheet)
         
-        let cameraAction = UIAlertAction(title: "Camera", style: .default) { (action) in
-            pickerController.sourceType = .camera
-            self.present(pickerController, animated: true, completion: nil)
-            
-        }
         let photosLibraryAction = UIAlertAction(title: "Photos Library", style: .default) { (action) in
             pickerController.sourceType = .photoLibrary
             self.present(pickerController, animated: true, completion: nil)
@@ -133,7 +131,6 @@ extension SignUpViewController {
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
-        alertController.addAction(cameraAction)
         alertController.addAction(photosLibraryAction)
         alertController.addAction(savedPhotosAction)
         alertController.addAction(cancelAction)

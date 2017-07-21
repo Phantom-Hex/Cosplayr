@@ -45,7 +45,7 @@ class PostTextTableViewCell: UITableViewCell {
         
         netService.fetchPostUserInfo(uid: post.userId) { (user) in
             if let user = user {
-                self.userImageView.sd_setImage(with: URL(string: user.profilePictureUrl!), placeholderImage: UIImage(named: "default"))
+                self.userImageView.sd_setImage(with: URL(string: user.profilePictureUrl), placeholderImage: UIImage(named: "default"))
                 self.usernameLabel.text = user.getFullname()
                 self.verifiedImageView.isHidden = !user.isVerified
             }

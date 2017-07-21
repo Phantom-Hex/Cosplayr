@@ -394,10 +394,6 @@ struct NetService {
             
             let user: User = User(snapshot: currentUser)
             completion(user)
-            
-            
-            
-            
         }) { (error) in
             print(error.localizedDescription)
         }

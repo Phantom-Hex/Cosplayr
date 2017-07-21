@@ -9,7 +9,7 @@
 import Foundation
 
 class Section: NSObject {
-    var convention: String?
-    var cosplayer: String?
-    var expanded: Bool!
+    var coName: String?
+    var country: String?
+    var profilePictureUrl: String?
 }

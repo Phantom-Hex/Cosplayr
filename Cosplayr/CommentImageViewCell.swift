@@ -43,7 +43,7 @@ class CommentImageTableViewCell: UITableViewCell {
         
         netService.fetchPostUserInfo(uid: comment.userId) { (user) in
             if let user = user {
-                self.userImageView.sd_setImage(with: URL(string: user.profilePictureUrl!), placeholderImage: UIImage(named: "default"))
+                self.userImageView.sd_setImage(with: URL(string: user.profilePictureUrl), placeholderImage: UIImage(named: "default"))
                 self.usernameLabel.text = user.getFullname()
                 self.verifiedImageView.isHidden = !user.isVerified
             }

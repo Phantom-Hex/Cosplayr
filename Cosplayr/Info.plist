@@ -22,8 +22,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>We need to see you... for a brief moment. Please have clothing on.</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We need your photos for a sec. Don't worry, not your nudes.</string>
+	<string>We need your photos for a sec. Don&apos;t worry, not your nudes.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TitilliumWeb-Regular.ttf</string>

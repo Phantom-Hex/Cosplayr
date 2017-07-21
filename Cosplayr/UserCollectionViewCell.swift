@@ -20,7 +20,7 @@ class UserCollectionViewCell: UICollectionViewCell {
     func configureCellForUser(user: User){
         self.countryLabel.text = user.country
         self.username.text = user.getFullname()
-        downloadImageFromFirebase(urlString: user.profilePictureUrl!)
+        downloadImageFromFirebase(urlString: user.profilePictureUrl)
         self.verifiedUserImageView.isHidden = !user.isVerified
         
     }

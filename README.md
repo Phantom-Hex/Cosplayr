@@ -9,4 +9,6 @@ But what if you were just standing in line trying to sign up for something at a 
 
 Currently, this is limited to conventions... you know, the ones with the comic books and the people in costume. That's the first iteration.
 
-A Phantom-Hex project.
+It is currently just a social media service for anyone in the cosplay community built on Swift with a Firebase backend and some added help from HMSegmentedControl (https://github.com/HeshamMegid/HMSegmentedControl) and SDWebImage (https://github.com/rs/SDWebImage) instead of some normal UI elements.  
+
+<i>A Phantom-Hex project.</i>

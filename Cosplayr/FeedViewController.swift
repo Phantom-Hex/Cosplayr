@@ -53,7 +53,7 @@ class FeedViewController: UIViewController {
         netService.fetchAllPosts {(posts) in
             self.postsArray = posts
             self.postsArray.sort(by: { (post1, post2) -> Bool in
-                Int(post1.postDate) > Int(post2.postDate)
+                Int(truncating: post1.postDate) > Int(truncating: post2.postDate)
             })
             
             self.tableView.reloadData()
@@ -85,8 +85,8 @@ class FeedViewController: UIViewController {
         segmentedControl = HMSegmentedControl(frame: CGRect(x: 0, y: 99, width: self.view.frame.size.width, height: 50))
         segmentedControl.sectionTitles = ["FEEDS","USERS"]
         segmentedControl.backgroundColor = UIColor(colorWithHexValue: 0x3D5B94)
-        segmentedControl.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 1, green: 1, blue: 1, alpha: 0.5), NSFontAttributeName: UIFont(name:"AppleSDGothicNeo-Medium", size: 18)!]
-        segmentedControl.selectedTitleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        segmentedControl.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor(red: 1, green: 1, blue: 1, alpha: 0.5), NSAttributedStringKey.font: UIFont(name:"AppleSDGothicNeo-Medium", size: 18)!]
+        segmentedControl.selectedTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         segmentedControl.selectionIndicatorColor = UIColor(red:1, green: 1, blue: 1, alpha: 0.5)
         segmentedControl.selectionStyle = .fullWidthStripe
         segmentedControl.selectedSegmentIndex = 0
@@ -96,7 +96,7 @@ class FeedViewController: UIViewController {
         
     }
     
-    func segmentedControlAction(){
+    @objc func segmentedControlAction(){
         if segmentedControl.selectedSegmentIndex == 0 {
             
             self.collectionView.alpha = 0

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "131F7D0A0F60BFA131CBA9D3334B892A"
+               BlueprintIdentifier = "CA243ECBDD26976B456636C3B77B88DD"
                BuildableName = "Pods_Cosplayr.framework"
                BlueprintName = "Pods-Cosplayr"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "131F7D0A0F60BFA131CBA9D3334B892A"
+            BlueprintIdentifier = "CA243ECBDD26976B456636C3B77B88DD"
             BuildableName = "Pods_Cosplayr.framework"
             BlueprintName = "Pods-Cosplayr"
             ReferencedContainer = "container:Pods.xcodeproj">

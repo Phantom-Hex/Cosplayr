@@ -15,17 +15,17 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.9</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>We need to see you... for a brief moment. Please have clothing on.</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We need your photos for a sec. Don&apos;t worry, not your nudes.</string>
+	<string>We need your photos for a sec. Don't worry, not your nudes.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TitilliumWeb-Regular.ttf</string>
@@ -41,7 +41,7 @@
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleDefault</string>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

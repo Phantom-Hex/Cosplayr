@@ -231,7 +231,7 @@ extension SignUpContestantViewController {
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         
-        let title = NSAttributedString(string: countryArrays[row], attributes: [NSForegroundColorAttributeName: UIColor.white])
+        let title = NSAttributedString(string: countryArrays[row], attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         return title
     }
     

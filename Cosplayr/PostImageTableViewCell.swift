@@ -57,7 +57,7 @@ class PostImageTableViewCell: UITableViewCell {
         
         self.postTextLabel.text = post.postText
         
-        let fromDate = NSDate(timeIntervalSince1970: TimeInterval(post.postDate))
+        let fromDate = NSDate(timeIntervalSince1970: TimeInterval(truncating: post.postDate))
         let toDate = NSDate()
         
         let differenceOfDate = Calendar.current.dateComponents([.second,.minute,.hour,.day,.weekOfMonth], from: fromDate as Date, to: toDate as Date)

@@ -53,7 +53,7 @@ class CommentImageTableViewCell: UITableViewCell {
         
         self.commentTextLabel.text = comment.commentText
         
-        let fromDate = NSDate(timeIntervalSince1970: TimeInterval(comment.commentDate))
+        let fromDate = NSDate(timeIntervalSince1970: TimeInterval(truncating: comment.commentDate))
         let toDate = NSDate()
         
         let differenceOfDate = Calendar.current.dateComponents([.second,.minute,.hour,.day,.weekOfMonth], from: fromDate as Date, to: toDate as Date)

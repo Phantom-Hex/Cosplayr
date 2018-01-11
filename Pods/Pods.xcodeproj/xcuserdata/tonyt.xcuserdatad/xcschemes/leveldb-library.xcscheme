@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CA243ECBDD26976B456636C3B77B88DD'
-               BlueprintName = 'Pods-Cosplayr'
+               BlueprintIdentifier = '3B08C49A396BAA0D9DCAD4460CC52F95'
+               BlueprintName = 'leveldb-library'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-Cosplayr.framework'>
+               BuildableName = 'leveldb-library.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
